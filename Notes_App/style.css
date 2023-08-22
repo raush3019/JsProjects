@@ -1,0 +1,82 @@
+*{
+    margin : 0;
+    padding : 0; 
+    box-sizing  : border-box;
+}
+html , body {
+   height : 100%;
+   width : 100%;
+}
+.main{
+    height: 100vh;
+    width: 100vw;
+    overflow-y: auto;
+    position: relative;
+
+    background-color: rgb(157, 231, 157);
+}
+.ri-edit-box-fill{
+    position: absolute;
+    top: 3%;
+    font-size: 30px;
+    right: 4%;
+    cursor: pointer;
+}
+.notes{
+    margin-top: 4%;
+    background-color: rgb(206, 172, 172);
+    min-height: 90vh;
+    width: 100vw;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    
+}
+.note{
+    height: 345px;
+    width: 345px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 15px 15px;
+
+    & .links{
+        height: 10%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+
+        & i{
+            margin: 0 10px;
+            font-size: 20px;
+            cursor: pointer;
+        }
+    }
+
+    & textarea{
+        height: 90%;
+        width: 100%;
+        outline: none;
+        border: none;
+        overflow-y: auto;
+        font-family: "poppins";
+        padding: 10px;
+        resize: none;
+        font-size: 17px;
+    }
+    & .hideDiv{
+        height: 90%;
+        width: 100%;
+        padding: 10px;
+        font-size: 15px;
+        font-family: "poppins";
+
+    }
+
+}
+.note .hidden{
+    display: none;
+}

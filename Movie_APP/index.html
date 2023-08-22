@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;700&family=Poppins:wght@100;200;300;400&family=Roboto:wght@100;300;400;500&display=swap"
+        rel="stylesheet">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie App</title> 
+</head>
+
+<body>
+
+    <div class="main">
+
+        <div class="discDiv hide">
+            <i class="ri-close-line" ></i>
+            <img src="https://images.unsplash.com/photo-1562448079-b5631888445f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fHBvc3RlcnxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=800&q=60" alt="">
+
+            <h4>Title :<span class="title" >ASDFAS</span></h4>
+            <h4>Overview : <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Modi ab quos dolore voluptatum tenetur ipsum eos eum sint tempore, at, deserunt molestiae quia, quo quasi voluptas suscipit exercitationem laborum cum.</p> </h4>
+            
+        </div>
+
+        <div class="navBar">
+            <i class="ri-menu-line"></i>
+
+            <h2>TheMovies</h2>
+
+            <i class="ri-search-line" ></i>
+
+            <form id="searchItem" action="" class="hide">
+                <input type="text">
+                <button type="submit" class="ri-search-line" ></button>
+                <i class="ri-arrow-go-back-line"></i>
+            </form>
+
+        </div>
+
+        <div class="moviesBanner hide" id="searchList">
+            <h3> Search results</h3>
+            <div class="postersDiv">
+                <!-- <div class="poster">
+                    <div class="imgDiv">
+                        <img src="https://images.unsplash.com/photo-1562448079-b5631888445f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fHBvc3RlcnxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=800&q=60" alt="">
+                    </div>
+                    <div class="nameRating">
+                        <h4>Power</h4>
+                        <i>rating</i>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+        <div class="moviesBanner" id="playingNow">
+            <h3>Playing Now</h3>
+            <div class="postersDiv">
+                <!-- <div class="poster">
+                    <div class="imgDiv">
+                        <img src="https://images.unsplash.com/photo-1562448079-b5631888445f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fHBvc3RlcnxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=800&q=60" alt="">
+                    </div>
+                    <div class="nameRating">
+                        <h4>Power</h4>
+                        <i>rating</i>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+
+        <div class="moviesBanner" id="popularNow">
+            <h3>Popular Movies</h3>
+            <div class="postersDiv">
+                <!-- <div class="poster">
+                    <div class="imgDiv">
+                        <img src="https://images.unsplash.com/photo-1562448079-b5631888445f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fHBvc3RlcnxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=800&q=60" alt="">
+                    </div>
+                    <div class="nameRating">
+                        <h4>Power</h4>
+                        <i>rating</i>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+
+        <div class="moviesBanner" id="topRated">
+            <h3>Top Rated</h3>
+            <div class="postersDiv">
+                <!-- <div class="poster">
+                    <div class="imgDiv">
+                        <img src="https://images.unsplash.com/photo-1562448079-b5631888445f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fHBvc3RlcnxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=800&q=60" alt="">
+                    </div>
+                    <div class="nameRating">
+                        <h4>Power</h4>
+                        <i>rating</i>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+
+        <div class="moviesBanner" id="upComing">
+            <h3>Upcoming</h3>
+            <div class="postersDiv">
+                <!-- <div class="poster">
+                    <div class="imgDiv">
+                        <img src="https://images.unsplash.com/photo-1562448079-b5631888445f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fHBvc3RlcnxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=800&q=60" alt="">
+                    </div>
+                    <div class="nameRating">
+                        <h4>Power</h4>
+                        <i>rating</i>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.2.1/axios.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
